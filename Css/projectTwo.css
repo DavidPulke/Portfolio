@@ -121,4 +121,16 @@ body {
   .container-form-title {
     width: 78%;
   }
+
+  .submit-container>input {
+    background: #020253 0% 0% no-repeat padding-box;
+    opacity: 1;
+    width: 80vw;
+    font: normal normal bold 20px/25px Heebo;
+    letter-spacing: 0.21px;
+    color: #FFFFFF;
+    opacity: 1;
+    border-radius: 0%;
+    padding: 0.6rem;
+  }
 }

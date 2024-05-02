@@ -221,7 +221,7 @@ ul {
 }
 
 /* section .sectionContent */
-section img[src="../Gallery/DavidIcon.jpg"] {
+section img[src="./Gallery/DavidIcon.jpg"] {
     border-radius: 50%;
     width: 3rem;
 
@@ -319,11 +319,11 @@ section a[href="#CV"]:hover {
     font-weight: 700;
 }
 
-section a[href="../Html/projectOne.html"],
-a[href="../Html/projectTwo.html"],
-a[href="../Html/projectThree.html"],
-a[href="../Html/projectFour.html"],
-a[href="../Html/projectFive.html"] {
+section a[href="./Html/projectOne.html"],
+a[href="./Html/projectTwo.html"],
+a[href="./Html/projectThree.html"],
+a[href="./Html/projectFour.html"],
+a[href="./Html/projectFive.html"] {
     width: 60vw;
     height: 50vh;
     padding-top: -2rem;
