@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/mainPage.css">
+
+    <link rel="Icon" href="../Gallery/DavidIcon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Workbench:BLED,SCAN@13,10&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Css/mediaRequirement.css">
+    <link rel="stylesheet" href="../SASS/main.scss">
+    <title>Home</title>
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <ul class="hamburgerMenu">
+                <li><a href="#" class="dropButton">&#9776;</a>
+                    <div class="dropDownContent">
+                        <a href="#">About</a>
+                        <a href="#projectSection">Projects</a>
+                        <a href="#contactSection">Contact</a>
+                    </div>
+                </li>
+            </ul>
+            </div>
+            <a href="#top" id="active">Main</a>
+            <a href="#">About</a>
+            <a href="#projectSection">Projects</a>
+            <a href="#contactSection">Contact</a>
+            <div>
+                <span class="myName">David Polak</span>
+                <img src="../Gallery/DavidIcon.jpg" alt="myIcon">
+            </div>
+        </nav>
+
+        <div class="headContent">
+            <h1>Portfolio</h1>
+            <p>
+                This Is My HackerU Project! Enjoy it &#9829;
+            </p>
+        </div>
+    </header>
+
+    <aside class="icons">
+        <img src="../Gallery/img-HTML.png" alt="html Icon">
+        <img src="../Gallery/img-CSS.png" alt="css Icon">
+        <img src="../Gallery/img-JS.png" alt="Java Script Icon">
+        <img src="../Gallery/img-SASS.png" alt="SASS Icon">
+        <img src="../Gallery/img-Bootstrap.png" alt="Bootstrap Icon">
+    </aside>
+    <div class="container">
+        <section class="sectionContent">
+            <img src="../Gallery/DavidIcon.jpg" alt="mySecIcon">
+            <h2>About Me</h2>
+            <br>
+            <ul>
+                <li>
+                    <p>&#9824; First Name:</p>
+                    <span>David &#9824;</span>
+                </li>
+                <li>
+                    <p>&#9827; Last Name:</p>
+                    <span>Polak &#9827;</span>
+                </li>
+                <li>
+                    <p>&#9830; My Age:</p>
+                    <span>
+                        <button class="btn" onclick="ageGuesser()">Guess It &#9830;</button>
+                    </span>
+                </li>
+            </ul>
+            <p title="about me">
+                So A Little Bit About Me I have 0 Background In Development
+                I Am Playing Video Games Since 2007 so I Guess I'm Used To Sit At The Computer
+                All Day Long
+            </p>
+            <a href="#CV" download="#">Download My CV</a>
+            <p class="phoneAbout">My Name: David Polak</p>
+            <p class="phoneAbout">My Age: 21</p>
+            </p>
+        </section>
+    </div>
+    <section class="projects" id="projectSection">
+        <h1>Main Projects</h1>
+        <p>Those Are The Main Projects </p>
+        <div class="projectsGallery">
+            <div class="project ProjectOne"><a href="../Html/projectOne.html"> <span>Project One</span> </a></div>
+            <div class="project projectTwo"><a href="../Html/projectTwo.html"> <span>Project Two</span> </a></div>
+            <div class="project projectThree"><a href="../Html/projectThree.html"> <span>Project Three</span> </a></div>
+            <div class="project projectFour"><a href="../Html/projectFour.html"> <span>Project Four</span> </a></div>
+            <div class="project projectFive"><a href="../Html/projectFive.html"> <span>Project Five</span> </a></div>
+            <div class="project projectSix">Project Six</div>
+        </div>
+    </section>
+    <section class="contactSection" id="contactSection">
+        <img src="../Gallery/Envelop.png" alt="Envelop">
+        <h1>Contact Us</h1>
+        <p>We Would Like To Help You ;)</p>
+        <form action="contactInfo">
+            <span>Full Name</span>
+            <input type="text" placeholder="Anonymous..." required>
+            <span>Email</span>
+            <input type="email" placeholder="Anonymous@Gmail.com..." required>
+            <span>Phone Number</span>
+            <input type="tel" placeholder="050-123-4567..." required>
+            <span>Content</span>
+            <textarea type="text" placeholder="Bluh Bluh Bluh..."></textarea>
+            <input type="submit">
+        </form>
+    </section>
+
+    <!--         <img src="../Gallery/Icon location.svg" alt="Icon location"><span>בית שמש 5, ישראל</span>
+        <img src="../Gallery/Icon email.svg" alt="Icon email"><span>davidpolak10201@gmail.com</span>
+        <img src="../Gallery/Icon whatsapp.svg" alt="Icon whatsapp"><span>053-606-1630</span>
+        <img src="../Gallery/Icon facebook.svg" alt="Icon facebook"><span>Pulke_David</span> -->
+
+
+    <aside class="social-icons">
+        <a href="#"><img src="../Gallery/facebook-app-symbol.png" alt="follow us in facebook"></a>
+    </aside>
+
+
+    <div class="social-icons instagram">
+        <a href="#"><img src="../Gallery/instagram-logo.png" alt="follow us in instagram"></a>
+    </div>
+
+
+    <div class="social-icons linkedin">
+        <a href="#"><img src="../Gallery/linkedin-big-logo.png" alt="follow us in linkedin"></a>
+    </div>
+
+
+    <div class="social-icons call">
+        <a href="tel:0536061630"><img src="../Gallery/call.png"
+                alt="For inquiries or support, give us a call ¯\_(ツ)_/¯"></a>
+    </div>
+    <footer>
+        <div>
+
+            <small>@David Polak</small>
+            <small>כל הזכויות שמורות</small>
+        </div>
+    </footer>
+    <script src="../JavaScript/mainPage.js"></script>
+</body>
+
+</html>
