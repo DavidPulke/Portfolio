@@ -1,0 +1,184 @@
+@media (max-width: 376px) {
+    body {
+        overflow-x: hidden;
+        width: 100vw;
+    }
+
+    .icons {
+        overflow-x: scroll;
+
+    }
+
+    /*     nav,
+    header {
+        width: 112vw;
+    } */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    nav {
+        padding-left: 1px;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    nav .myName {
+        display: none;
+    }
+
+    nav .hamburgerMenu {
+        display: block;
+    }
+
+    section ul {
+        display: none;
+    }
+
+    .icons {
+        overflow-x: scroll;
+        padding-left: 2rem;
+    }
+
+    .phoneAbout {
+        display: block;
+    }
+
+    .projects {
+        height: 220rem;
+        ;
+    }
+
+    .project {
+        width: 60vw;
+    }
+
+    .projectsGallery {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6);
+        gap: 20px;
+    }
+
+    .projectTwo {
+        margin-top: 15rem;
+    }
+
+    .projectThree {
+        margin-top: 31rem;
+    }
+}
+
+footer img,
+footer span {
+    display: none;
+}
+
+/* .social-icons {
+    display: block;
+    position: relative;
+    bottom: 80px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background: #b880e6 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+
+    img {
+        display: block;
+        width: 30%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+    }
+} */
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        padding-left: 1px;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    nav .myName {
+        display: none;
+    }
+
+    nav .hamburgerMenu {
+        display: block;
+    }
+
+    section ul {
+        display: none;
+    }
+
+    .icons {
+        width: 100vw;
+        box-shadow: 0.5rem 0.5rem 2rem 0.5rem #b4497f;
+    }
+
+    .phoneAbout {
+        display: block;
+    }
+
+    .projects {
+        height: 220rem;
+        ;
+    }
+
+
+    .project a {
+        width: 60vw;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .projectsGallery {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6);
+        gap: 20px;
+    }
+
+    .projectTwo {
+        margin-top: 15rem;
+    }
+
+    .projectThree {
+        margin-top: 31rem;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1400px) {}

@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5EEFF;
+}
+
+.phoneHeader {
+    display: none;
+    background-color: #020253;
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+    padding-top: 7rem;
+}
+
+.phoneHeader h1 {
+    text-align: center;
+    font: normal normal bold 36px/47px Assistant;
+    letter-spacing: 0px;
+    color: #0EE1DA;
+    opacity: 1;
+}
+
+.phoneHeader p {
+    font: normal normal normal 20px/26px Assistant;
+    letter-spacing: 0px;
+    color: #F9F9F9;
+    opacity: 1;
+    width: 13rem;
+    margin: 0 auto;
+    font-weight: 600;
+}
+
+.projectFourContainer {
+    width: 50vw;
+    margin: 0 auto;
+    padding-top: 13rem;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 15rem);
+    gap: 4rem;
+}
+
+.topRight {
+    background-color: #020253;
+    grid-column: 3/5;
+    grid-row: 1/3;
+    height: 60vh;
+    text-align: center;
+    padding-top: 11rem;
+}
+
+.topRight h1 {
+    font: normal normal bold 61px/80px Assistant;
+    letter-spacing: 0px;
+    color: #0EE1DA;
+    opacity: 1;
+
+}
+
+.topRight p {
+    font: normal normal normal 20px/26px Assistant;
+    letter-spacing: 0px;
+    color: #F9F9F9;
+    opacity: 1;
+    width: 13rem;
+    margin: 0 auto;
+    font-weight: 600;
+}
+
+.bottomLeft {
+    background-color: #8E097C;
+    grid-column: 1/3;
+    grid-row: 4/8;
+    padding-top: 7rem;
+    height: 92.2vh;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    margin: 0 auto;
+    padding-top: 5rem;
+}
+
+.form-control>input {
+    width: 20vw;
+    height: 3rem;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border: 0;
+    border-bottom: 4px solid #0EE1DA;
+}
+
+.form-control>label {
+    text-align: right;
+    font: normal normal bold 16px/24px Heebo;
+    letter-spacing: 0px;
+    color: #0EE1DA;
+    opacity: 1;
+}
+
+.form-control>textarea {
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    height: 20vh;
+}
+
+.submit-container>input {
+    background: #0EE1DA 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding: 5px;
+    border-radius: 15px;
+    width: 20vw;
+    margin-top: 2rem;
+    font: normal normal bold 24px/33px Heebo;
+    letter-spacing: 0.36px;
+    color: #011560;
+    opacity: 1;
+}
+
+.submit-container>input:hover {
+    background: #000 0% 0% no-repeat padding-box;
+    color: aqua;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .phoneHeader {
+        display: block;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .projectFourContainer {
+        width: 80vw;
+        /* margin: 0 auto; */
+        padding-top: 3rem;
+        padding: 5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(10, 10rem);
+        gap: 1rem;
+    }
+
+    .topRight {
+        display: none;
+    }
+
+    .bottomLeft {
+        width: 100%;
+        grid-column: 1/3;
+        grid-row: 5/10;
+    }
+
+    .submit-container>input,
+    .form-control>textarea,
+    .form-control>input,
+    .form-control {
+        width: 70vw;
+    }
+
+    .img1 img,
+    .img2 img,
+    .img3 img,
+    .img4 img,
+    .img5 img,
+    .img6 img,
+    .img7 img,
+    .img8 img {
+        width: 159px;
+        height: 146px;
+    }
+
+
+}
+
+@media (max-width: 400px) {
+    .bottomLeft {
+        height: 95vh;
+    }
+}

@@ -1,0 +1,204 @@
+body {
+    background-color: rgb(108, 117, 125);
+    overflow-x: hidden;
+}
+
+:root {
+    --bgc: bisque;
+    --textColor: #fff;
+    --fw: 800;
+    --textShadow: 4px 3px 3px #000;
+    --boxShadow: 5px 4px 4px 3px rgba(209, 180, 145, 0.897);
+}
+
+.bgc {
+    background-color: var(--bgc);
+    color: var(--textColor);
+}
+
+h1,
+p {
+    font-weight: var(--fw);
+    text-shadow: var(--textShadow);
+}
+
+.bs {
+    box-shadow: var(--boxShadow);
+}
+
+@media (min-width: 1000px) {
+    .activated {
+        border-radius: 25px;
+        color: white !important;
+        background-color: #000;
+    }
+
+    nav ul li a:hover {
+        border-radius: 25px;
+        color: white !important;
+        background-color: #000;
+    }
+}
+
+
+
+/* this is the truck animation */
+@keyframes truck {
+    0% {
+        left: -15%;
+    }
+
+    100% {
+        left: 100%;
+    }
+
+}
+
+@keyframes wheel {
+    0% {
+        transform: rotate(0deg);
+        left: -15%;
+    }
+
+    100% {
+        transform: rotate(1200deg);
+        left: 100%;
+    }
+}
+
+.truck img {
+    position: absolute;
+    width: 20rem;
+    left: 0%;
+    animation: truck 5s infinite linear;
+
+
+}
+
+
+.backWheel img {
+    position: absolute;
+    width: 3.5rem;
+    margin-left: 2rem;
+    margin-top: 8.5rem;
+    animation: wheel 5s infinite linear;
+}
+
+.frontWheel img {
+    position: absolute;
+    width: 3.5rem;
+    margin-left: 14rem;
+    margin-top: 8.5rem;
+    animation: wheel 5s infinite linear;
+}
+
+@media (max-width: 375px) {
+
+    section .phoneCards {
+        margin-left: 1rem;
+        overflow-x: hidden;
+    }
+
+    @keyframes wheel {
+        0% {
+            transform: rotate(0deg);
+            left: 0%;
+        }
+
+        50% {
+            transform: rotate(400deg);
+            left: 9%;
+        }
+
+        51% {
+            transform: rotate(200deg);
+            left: 9%;
+        }
+
+        100% {
+            transform: rotate(0deg);
+            left: 0%;
+        }
+    }
+
+    @keyframes truck {
+        0% {
+            left: 0%;
+        }
+
+        50% {
+            left: 5%;
+        }
+
+        51% {
+            left: 5%;
+        }
+
+        100% {
+            left: 0%;
+        }
+
+    }
+
+}
+
+@media (max-width: 578px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    /*             aside {
+                display: none;
+            } */
+
+    .phoneCards {
+        display: grid !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+        grid-template-rows: repeat(3) !important;
+        margin-left: 3rem;
+        gap: 2rem;
+    }
+
+    @keyframes wheel {
+        0% {
+            transform: rotate(0deg);
+            left: 0%;
+        }
+
+        50% {
+            transform: rotate(400deg);
+            left: 25%;
+        }
+
+        51% {
+            transform: rotate(200deg);
+            left: 25%;
+        }
+
+        100% {
+            transform: rotate(0deg);
+            left: 0%;
+        }
+    }
+
+    @keyframes truck {
+        0% {
+            left: 0%;
+        }
+
+        50% {
+            left: 25%;
+        }
+
+        51% {
+            left: 25%;
+        }
+
+        100% {
+            left: 0%;
+        }
+
+    }
+
+
+}

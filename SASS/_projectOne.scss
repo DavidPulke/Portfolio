@@ -1,0 +1,141 @@
+section {
+    @extend %container;
+
+}
+
+section h1 {
+    @extend %h1;
+}
+
+section p {
+    @extend %p;
+}
+
+section span {
+    font-size: 16pt;
+    line-height: 2;
+    font-weight: 600;
+    font-family: monospace;
+}
+
+section a[href="../Html/projectOne.html"] {
+    background-color: wheat;
+    width: 20vw;
+    height: 30vh;
+}
+
+.headContent a {
+    display: block;
+    text-decoration: none;
+    background-color: bisque;
+    width: 10rem;
+    margin: 0 auto;
+    padding: 6px 8px;
+    font-family: cursive;
+    margin-top: 1rem;
+    color: #000;
+    font-weight: 600;
+}
+
+
+.projectsFooter {
+    width: 100vw;
+    height: 250px;
+    margin-top: 2rem;
+    background-color: #fff;
+    padding-top: 10rem;
+}
+
+section input {
+    background: #F6F6F624 0% 0% no-repeat padding-box;
+    border: 2px solid #FFFFFF;
+    opacity: 1;
+    width: 25vw;
+    height: 1.8rem;
+    display: flex;
+    justify-content: start;
+}
+
+section input[type="submit"] {
+    width: 7rem;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0 auto;
+    padding-right: 2rem;
+    margin-top: 2rem;
+}
+
+form label[for="name"] {
+
+    /*     font-family: cursive;
+    font-size: 18pt;*/
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 4rem;
+
+
+    /*    background-image: linear-gradient(to right, cyan, blue, green, red, aqua, brown);
+    background-clip: text;
+    color: transparent; */
+
+
+    font-weight: 800;
+    text-align: center;
+    font: normal normal normal 16px/20px Varela Round;
+    letter-spacing: 0px;
+    color: #F9F9F9;
+    opacity: 1;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+.here-and-now {
+    width: 24vw;
+    margin: 0 auto;
+}
+
+@media (max-width: 630px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    section {
+        padding-top: 9rem;
+
+    }
+
+    section h1 {
+        text-align: center;
+        font: normal normal normal 60px/86px Satisfy;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        text-shadow: 0px 0px 36px #00000087;
+        opacity: 1;
+    }
+
+    .here-and-now {
+        width: 60vw;
+    }
+
+    form input {
+        width: 60vw;
+    }
+
+    section input[type="submit"] {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        opacity: 1;
+        width: 60vw;
+        border-radius: 0%;
+        padding-right: 6.2rem;
+    }
+}

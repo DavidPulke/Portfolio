@@ -1,0 +1,38 @@
+%container {
+    background: transparent linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 40px #000;
+    opacity: 1;
+    width: 90vw;
+    height: 80vh;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 8rem;
+    color: white;
+    padding-top: 4.2rem;
+    line-height: 1;
+    border-radius: 25px;
+}
+
+%h1 {
+    font: normal normal normal 160px/231px Satisfy;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 36px #00000087;
+    opacity: 1;
+    /*     font-size: 30pt;
+    font-family: cursive;
+    font-weight: 800;
+    text-shadow: 5px 6px 3px #000; */
+}
+
+%p {
+    font-size: 20pt;
+    font-family: monospace;
+    font-weight: 700;
+    text-shadow: 2px 3px 1px #000;
+}
+
+body {
+    max-width: 98vw;
+    overflow-x: hidden;
+}
