@@ -1,8 +1,14 @@
 @media (max-width: 376px) {
     body {
         overflow-x: hidden;
+    }
+
+
+    nav {
         width: 100vw;
     }
+
+
 
     .icons {
         overflow-x: scroll;

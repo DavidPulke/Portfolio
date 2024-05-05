@@ -369,4 +369,167 @@ footer {
     margin: 0;
     font-size: 1em;
   }
+}
+.project-six-header {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.project-six-header img {
+  width: 100vw;
+  height: 60vh;
+}
+
+.project-six-header h1,
+.project-six-header p {
+  font-size: 24pt;
+  padding-right: 5rem;
+  color: rgb(255, 0, 0);
+}
+
+.project-six-header h1 {
+  font: normal normal bold 86px/113px Assistant;
+  letter-spacing: 0px;
+  color: #D3E10E;
+  opacity: 1;
+  margin-top: -28rem;
+}
+
+.project-six-header p {
+  text-align: center;
+  font: normal normal normal 20px/26px Assistant;
+  letter-spacing: 0px;
+  color: #F9F9F9;
+  opacity: 1;
+}
+
+.project-six-section {
+  width: 70vw;
+  height: 29vh;
+  padding-bottom: 5rem;
+  margin-top: 20rem;
+  background-image: none;
+  box-shadow: none;
+}
+
+.project-six-section form {
+  width: 60vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: right;
+}
+
+.project-six-section label {
+  text-align: right;
+  font: normal normal bold 16px/21px Assistant;
+  letter-spacing: 0px;
+  color: #011560;
+  opacity: 1;
+  margin-left: -2.2rem;
+}
+
+.project-six-section label[for=username] {
+  margin-left: -3.5rem;
+}
+
+.project-six-section input {
+  background: #F6F6F6 0% 0% no-repeat padding-box;
+  opacity: 1;
+  width: 20vw;
+  margin-top: 5.5rem;
+  height: 50px;
+  border-bottom: 3px solid #D3E10E;
+}
+
+.project-six-section input[type=submit] {
+  text-align: center;
+  font: normal normal bold 22px/30px Assistant;
+  letter-spacing: 0.33px;
+  color: #011560;
+  opacity: 1;
+  background: #D3E10E 0% 0% no-repeat padding-box;
+  opacity: 1;
+  margin-top: 5.5rem;
+  border-radius: 0%;
+  cursor: pointer;
+  margin-left: 15rem;
+  width: 10vw;
+  padding-right: 3.7rem;
+  border-bottom: none;
+}
+
+@media (max-width: 600px) {
+  .project-six-header img {
+    width: 100vw;
+    height: 30vh;
+  }
+  .project-six-header h1,
+  .project-six-header p {
+    font-size: 15pt;
+    text-align: center;
+    margin-left: 4rem;
+  }
+  .project-six-header h1 {
+    margin-top: -16rem;
+    font-size: 21pt;
+  }
+  .project-six-section {
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-six-section form {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    margin-left: 3rem;
+  }
+  .project-six-section input {
+    width: 70vw;
+    margin-top: 0;
+  }
+  .project-six-section input[type=submit] {
+    margin-top: 0.8rem;
+    width: 70vw;
+    padding-right: 6rem;
+  }
+}
+@media (max-width: 400px) {
+  .project-six-header h1 {
+    margin-top: -15rem;
+    font-size: 15pt;
+    margin-left: 6rem;
+  }
+  .project-six-header p {
+    font-size: 12pt;
+    margin-top: -2rem;
+    margin-left: 6rem;
+  }
+}
+@media (max-width: 365px) {
+  .project-six-header h1 {
+    margin-top: -13rem;
+    font-size: 14pt;
+    margin-left: 6rem;
+  }
+  .project-six-header p {
+    font-size: 10pt;
+    margin-top: -2rem;
+    margin-left: 6rem;
+  }
+}
+@media (max-width: 350px) {
+  .project-six-header h1 {
+    margin-top: -15rem;
+    font-size: 13.3pt;
+    margin-left: 6rem;
+  }
+  .project-six-header p {
+    font-size: 9pt;
+    margin-top: -2rem;
+    margin-left: 6rem;
+  }
 }/*# sourceMappingURL=main.css.map */
