@@ -267,7 +267,7 @@ p[title="about me"] {
     font-size: 14pt;
 }
 
-section a[href="#CV"] {
+section a[href="./rar Files/DavidPolak Project.rar"] {
     display: block;
     width: 11em;
     height: 2em;
@@ -281,7 +281,7 @@ section a[href="#CV"] {
     color: #000;
 }
 
-section a[href="#CV"]:hover {
+section a[href="./rar Files/DavidPolak Project.rar"]:hover {
     background-color: #ccc;
     color: #000;
     animation: fade 3s infinite;
