@@ -373,10 +373,11 @@ section a span {
     border-radius: 25px;
     margin: 0 auto;
     overflow: hidden;
+    box-shadow: 6px 6px 7px 2px #080607;
 }
 
 .project:hover {
-    box-shadow: 5px 6px 7px 0px #080607;
+    box-shadow: 5px 6px 7px 0px #f50c80e7;
 }
 
 .ProjectOne {
@@ -618,12 +619,12 @@ footer div {
     background-color: #3A3A3A;
     margin-top: -4rem;
     width: 100vw;
-    height: 5vh;
+    height: 17vh;
     display: flex;
     justify-content: space-between;
-    margin-top: 3rem;
     padding: 15px;
     border-bottom: 2px solid #ff0095;
+    padding-top: 8.2rem;
 }
 
 footer div small {
@@ -638,23 +639,26 @@ footer div small {
     display: block;
     position: relative;
     bottom: 80px;
+    left: 6px;
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background: #f10e5aa6 0% 0% no-repeat padding-box;
+    background: #ff0055 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     position: fixed;
 
-    img {
-        display: block;
-        width: 30%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        margin: auto;
-    }
+}
+
+.social-icons img {
+    display: block;
+    width: 30%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+
 }
 
 .instagram {
