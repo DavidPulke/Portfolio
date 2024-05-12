@@ -139,6 +139,13 @@ form label {
     padding-right: 6.2rem;
   }
 }
+@media (max-width: 380px) {
+  section {
+    height: 100vh;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
 body {
   overflow-x: hidden;
 }
