@@ -19,6 +19,12 @@ footer {
     margin-top: 10rem;
 }
 
+footer div {
+    padding-top: 8px;
+    height: 30px;
+    margin-top: 10rem;
+}
+
 .headLinks {
     width: 83vw;
     height: 5.5vh;
@@ -58,4 +64,29 @@ footer {
 
 .headLinks a:hover {
     background-size: 0 3px, 100% 3px;
+}
+
+@media (max-width: 380px) {
+    .headContent .headLinks a {
+        font-size: 0.7rem;
+        padding: 4px 6px;
+    }
+
+    .headContent {
+        height: 45vh;
+        background-position: center;
+    }
+
+    footer div {
+        margin-top: 0;
+        height: 0;
+    }
+}
+
+@media (max-width: 470px) {
+    footer div {
+        margin-top: 4rem;
+        height: 2rem;
+        padding-top: 8px;
+    }
 }
