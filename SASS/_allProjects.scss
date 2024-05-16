@@ -19,7 +19,7 @@ footer {
     margin-top: 10rem;
 }
 
-footer div {
+#footer div {
     padding-top: 8px;
     height: 30px;
     margin-top: 10rem;
@@ -72,21 +72,21 @@ footer div {
         padding: 4px 6px;
     }
 
-    .headContent {
+    #headContent {
         height: 45vh;
         background-position: center;
+
     }
 
-    footer div {
+    #footer div {
         margin-top: 0;
-        height: 0;
+        height: 2rem;
     }
 }
 
 @media (max-width: 470px) {
-    footer div {
-        margin-top: 4rem;
-        height: 2rem;
-        padding-top: 8px;
+    #footer div {
+        height: 3rem;
+        padding-top: 17px;
     }
 }
