@@ -1,0 +1,356 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    padding-top: 20px;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.sidenav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    background-color: #555;
+}
+
+.openBtn {
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    position: fixed;
+}
+
+main {
+    padding: 20px;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.opened {
+    width: 250px;
+}
+
+
+/* גלריית תמונות */
+.gallery {
+    --g: 8px;
+    /* the gap */
+    --s: 400px;
+    /* the size */
+
+    display: grid;
+    border-radius: 50%;
+}
+
+.gallery>img {
+    grid-area: 1/1;
+    width: 200px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: translate(var(--_x, 0), var(--_y, 0));
+    cursor: pointer;
+    z-index: 0;
+    transition: .3s, z-index 0s .3s;
+}
+
+.gallery img:hover {
+    --_i: 1;
+    z-index: 1;
+    transition: transform .2s, clip-path .3s .2s, z-index 0s;
+}
+
+.gallery:hover img {
+    transform: translate(0, 0);
+}
+
+.gallery>img:nth-child(1) {
+    clip-path: polygon(50% 50%, calc(50%*var(--_i, 0)) calc(120%*var(--_i, 0)), 0 calc(100%*var(--_i, 0)), 0 0, 100% 0, 100% calc(100%*var(--_i, 0)), calc(100% - 50%*var(--_i, 0)) calc(120%*var(--_i, 0)));
+    --_y: calc(-1*var(--g))
+}
+
+.gallery>img:nth-child(2) {
+    clip-path: polygon(50% 50%, calc(100% - 120%*var(--_i, 0)) calc(50%*var(--_i, 0)), calc(100% - 100%*var(--_i, 0)) 0, 100% 0, 100% 100%, calc(100% - 100%*var(--_i, 0)) 100%, calc(100% - 120%*var(--_i, 0)) calc(100% - 50%*var(--_i, 0)));
+    --_x: var(--g)
+}
+
+.gallery>img:nth-child(3) {
+    clip-path: polygon(50% 50%, calc(100% - 50%*var(--_i, 0)) calc(100% - 120%*var(--_i, 0)), 100% calc(100% - 120%*var(--_i, 0)), 100% 100%, 0 100%, 0 calc(100% - 100%*var(--_i, 0)), calc(50%*var(--_i, 0)) calc(100% - 120%*var(--_i, 0)));
+    --_y: var(--g)
+}
+
+.gallery>img:nth-child(4) {
+    clip-path: polygon(50% 50%, calc(120%*var(--_i, 0)) calc(50%*var(--_i, 0)), calc(100%*var(--_i, 0)) 0, 0 0, 0 100%, calc(100%*var(--_i, 0)) 100%, calc(120%*var(--_i, 0)) calc(100% - 50%*var(--_i, 0)));
+    --_x: calc(-1*var(--g))
+}
+
+.main-content {
+    width: 30vw;
+    margin-left: 27%;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
+
+.main-content h1 {
+    margin-left: 53%;
+    text-align: center;
+    color: #fff;
+}
+
+.main-content h3,
+.main-content h1 {
+    font-family: fantasy;
+    font-size: 2.9rem;
+    text-shadow: 5px 4px 3px #000;
+    width: 16rem;
+    line-height: 1;
+}
+
+.main-content h3 {
+    color: red;
+    font-size: 6rem;
+    line-height: 0.9;
+    letter-spacing: 7px;
+    font-family: fantasy;
+    width: 15.2vw;
+}
+
+.main-content a {
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: rgba(255, 27, 27, 0.788);
+    border-radius: 25px;
+    padding: 8px 10px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+
+}
+
+.main-content a:hover {
+    animation: link 1.6s infinite linear;
+}
+
+@keyframes link {
+    to {
+        background-color: #fff;
+        color: rgba(255, 0, 0, 0.993);
+    }
+}
+
+.main-content div {
+    width: 13rem;
+}
+
+.section-content {
+    width: 99vw;
+    border: 5px solid #000;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 96, 1) 33%, rgba(255, 0, 0, 1) 100%);
+}
+
+.section-content h1 {
+    color: red;
+    text-shadow: 3px 3px 2px #000;
+    font-size: 6rem;
+    line-height: 1;
+    letter-spacing: 7px;
+    font-family: fantasy;
+    width: 30.2vw;
+
+}
+
+.centerIt {
+    padding-left: 3.7rem;
+}
+
+.section-content p {
+    font-family: serif;
+    font-size: 1.4rem;
+    width: 24vw;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    text-shadow: 3px 3px 2px #000;
+    padding-right: 8rem;
+}
+
+.routine-section {
+    margin-top: 12rem;
+    height: 100vh;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 96, 1) 33%, rgba(255, 0, 0, 1) 100%);
+    border: 5px solid #000;
+}
+
+.routine-section>h1 {
+    text-align: center;
+    color: red;
+    text-shadow: 3px 3px 2px #000;
+    font-size: 6rem;
+    line-height: 1;
+    letter-spacing: 7px;
+    font-family: fantasy;
+}
+
+.routine-imgs {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.routine-imgs img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 100%;
+}
+
+.routine-section span {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.4rem;
+    font-family: "Noto Sans Symbols 2";
+    font-weight: bold;
+    color: #fff;
+}
+
+
+.classTime {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.classTime p {
+    color: #fff;
+    font-family: fantasy;
+    font-size: 4rem;
+    width: 19rem;
+    text-align: center;
+    text-shadow: 3px 3px 2px #000;
+    margin-top: 1rem;
+}
+
+.classTime a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    background-color: rgba(255, 27, 27, 0.788);
+    border-radius: 20px;
+    padding: 12px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+    width: 10vw;
+    text-align: center;
+}
+
+
+
+
+.graduates-section {
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+}
+
+.graduates-section img {
+    position: absolute;
+    margin-left: 70%;
+    width: 35rem;
+    height: 35rem;
+    border-radius: 50%;
+    margin-top: -41.4rem;
+}
+
+.graduates-section h1 {
+
+    color: red;
+    text-shadow: 3px 3px 2px #000;
+    font-size: 6rem;
+    line-height: 1;
+    letter-spacing: 7px;
+    font-family: fantasy;
+}
+
+.graduates-section p {
+    color: #fff;
+    font-family: fantasy;
+    font-size: 2rem;
+    width: 40rem;
+    text-shadow: 3px 3px 2px #000;
+    margin-top: 1rem;
+}
+
+.graduates-section a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    background-color: rgba(255, 27, 27, 0.788);
+    border-radius: 20px;
+    padding: 12px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+    width: 10vw;
+    text-align: center;
+}
+
+.graduates-section-text {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 96, 1) 33%, rgba(255, 0, 0, 1) 100%);
+    padding-left: 5rem;
+    border: 5px solid #000;
+    height: 70vh;
+}
+
+
+
+
+footer {
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 33%, rgba(255, 0, 74, 1) 100%);
+}
+
+footer small {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+}

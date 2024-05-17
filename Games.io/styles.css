@@ -1,0 +1,330 @@
+/* CSS כאן תוסיף את ה */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+}
+
+/* סגנון הכפתור של האקורדיון */
+.accordion {
+    color: #fff;
+    cursor: pointer;
+    padding: 20px;
+    text-align: left;
+}
+
+/* סגנון הפאנל של האקורדיון (החלק שמתעקל) */
+.panel {
+    display: none;
+    background-color: #fffb00ce;
+    padding: 12px 16px;
+    border-radius: 25px;
+
+}
+
+/* סגנון של הפאנל של האקורדיון כאשר הוא פתוח */
+.panel.show {
+    display: block;
+
+}
+
+
+.panel ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.container {
+    max-width: 25rem;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container h1 {
+
+    margin-left: 22px;
+    font-family: honk;
+}
+
+@keyframes rainbow {
+    0% {
+        color: #ff0000;
+    }
+
+    20% {
+        color: #ff7f00;
+    }
+
+    40% {
+        color: #ffff00;
+    }
+
+    60% {
+        color: #00ff00;
+    }
+
+    80% {
+        color: #00ffff;
+    }
+
+    100% {
+        color: #8b00ff;
+    }
+}
+
+.container a:hover {
+    animation: rainbow 3s linear infinite;
+}
+
+
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.featured {
+    background-color: #f4f4f4;
+    text-align: center;
+    height: 25vh;
+}
+
+.featured h2 {
+    margin-left: 20px;
+    margin-top: 5.8rem;
+    color: rgb(0, 153, 255);
+    font-weight: bold;
+    font-size: 22pt;
+    font-family: jaro;
+    word-spacing: 10px;
+    letter-spacing: 4px;
+    animation: slideIn 1s ease-out forwards;
+}
+
+.featured span {
+    animation: rainbow 10s linear infinite;
+}
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.games {
+    background-color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Reset סגנון העמוד */
+body,
+h1,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* סגנון Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* סגנון Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* סגנון רשימת המשחקים */
+.games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.game {
+    width: 300px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.game img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.game h3,
+.game p {
+    padding: 10px;
+}
+
+.game h3 {
+    margin-top: 10px;
+}
+
+.game p {
+    color: #666;
+}
+
+.game a {
+    display: block;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.game a:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+
+/* Reset סגנון העמוד */
+body,
+h1,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* סגנון Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* סגנון Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* סגנון תוכן עיקרי */
+main {
+    padding: 20px;
+}
+
+/* סגנון אודות */
+.about {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.about h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+
+
+header a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: 900;
+    font-size: 18pt;
+    font-family: cursive;
+
+}
+
+
+@media (max-width: 900px) {
+    header a {
+        font-size: 1rem;
+    }
+}

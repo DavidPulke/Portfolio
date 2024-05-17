@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>דף יצירת קשר</title>
+    <link rel="Icon" href="../Gallery/Icon David.jpg">
+    <link rel="stylesheet" href="../css/signUp.css">
+</head>
+
+<body>
+    <div class="contact-form-container">
+        <h2>צור קשר</h2>
+        <form dir="rtl" id="contact-form">
+            <label for="name">שם:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">אימייל:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">הודעה:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">שלח</button>
+        </form>
+        <p dir="rtl" id="response-message" style="display:none;">ההודעה נשלחה בהצלחה!</p>
+    </div>
+    <script src="../js/signUp.js"></script>
+</body>
+
+</html>
