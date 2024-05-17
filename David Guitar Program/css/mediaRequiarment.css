@@ -1,0 +1,151 @@
+@media (max-width: 380px) {
+    html {
+        .routine-imgs {
+
+            img[src="./Gallery/woman.jpg"],
+            img[src="./Gallery/workshop.jpg"],
+            img[src="./Gallery/monkey.jpg"] {
+                width: 5.5rem;
+                height: 5.5rem;
+            }
+        }
+
+        .classTime .phoneTime {
+            font-size: 0.7rem;
+            font-weight: 800;
+        }
+
+        .routine-section .classTime p {
+            font-size: 1.5rem;
+        }
+
+        .routine-section .classTime a {
+            width: 17vw;
+        }
+    }
+
+    #graduates-section img[src="./Gallery/audience.jpg"] {
+        margin-left: 29%;
+        width: 15rem;
+        height: 15rem;
+        margin-top: -46.5rem;
+    }
+
+    .graduates-section .graduates-section-text {
+        height: 100vh;
+
+    }
+
+    #section-content .phoneP {
+        width: 45vw;
+        padding-left: 2rem;
+    }
+
+
+}
+
+@media (max-width: 350px) {
+    html body .classTime .phoneTime {
+        font-size: 0.6rem;
+
+    }
+
+    html body #graduates-section img[src="./Gallery/audience.jpg"] {
+        margin-left: 29%;
+        margin-top: -60.5rem;
+    }
+}
+
+@media (max-width: 770px) {
+
+
+
+    .main-content {
+        padding-left: 0%;
+        margin: 0 auto;
+        width: 85vw;
+    }
+
+    .main-content .phoneH1 {
+        margin-left: -22%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-content h3 {
+        width: 60vw;
+    }
+
+    .section-content {
+        width: 100vw;
+    }
+
+    .routine-section {
+        width: 98vw;
+    }
+
+    .section-content .phoneH1 {
+        font-size: 4rem;
+        padding-top: 2.5rem;
+        margin-right: 11rem;
+    }
+
+    .section-content .centerIt {
+        padding-left: 0;
+    }
+
+    .section-content .phoneP {
+        width: 47vw;
+        align-content: center;
+        margin: 0 auto;
+        padding-left: 5rem;
+    }
+
+    .routine-imgs img[src="./Gallery/woman.jpg"],
+    .routine-imgs img[src="./Gallery/workshop.jpg"],
+    .routine-imgs img[src="./Gallery/monkey.jpg"] {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .classTime .phoneTime {
+        font-size: 0.8rem;
+    }
+
+    .routine-section .classTime p {
+        font-size: 2rem;
+    }
+
+    .routine-section .classTime a {
+        width: 25vw;
+    }
+
+    #routine-section {
+        height: 80vh;
+    }
+
+    .graduates-section img[src="./Gallery/audience.jpg"] {
+        margin-left: 40%;
+        width: 15rem;
+        height: 15rem;
+        margin-top: -45rem;
+    }
+
+    .graduates-section .graduates-section-text {
+        padding-top: 5rem;
+    }
+
+    .graduates-section .graduates-section-text h1 {
+        font-size: 3rem;
+        margin-left: -2rem;
+        width: 25vw;
+        margin-top: 9rem;
+    }
+
+    .graduates-section .graduates-section-text p {
+        margin-left: -4rem;
+        width: 60vw;
+    }
+}
