@@ -29,7 +29,7 @@
     }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 386px) {
     body {
         overflow-x: hidden;
     }
@@ -238,7 +238,7 @@ footer span {
 } */
 
 /* // Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
 
 

@@ -147,7 +147,6 @@ body {
 
     .projectFourContainer {
         width: 80vw;
-        /* margin: 0 auto; */
         padding-top: 3rem;
         padding: 5rem;
         display: grid;
@@ -190,6 +189,6 @@ body {
 
 @media (max-width: 400px) {
     .bottomLeft {
-        height: 95vh;
+        height: 53rem;
     }
 }
