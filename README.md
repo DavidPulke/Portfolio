@@ -6,7 +6,7 @@
 ## תצוגה מקדימה
 
 ניתן לראות תצוגה מקדימה של האתר בקישור הבא:
-[פורטפוליו](https://davidpulke.github.io/Project-One/index.html)
+[פורטפוליו](https://davidpulke.github.io/Portfolio/)
 
 ## תוכן האתר
 
